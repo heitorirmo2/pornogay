@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>1tds</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <button onclick="tocarAudio()">ENTRAR</button>
+
+  <audio id="som" src="/media/X2Download.com - Porno Gay Luan Gameplay - KauaMoita - SoundLoadMate.com.mp3"></audio>
+
+  <script>
+    function tocarAudio() {
+      const audio = document.getElementById("som");
+      audio.volume = 1.0;
+      audio.play().then(() => {
+        console.log("Áudio tocando com sucesso.");
+      }).catch((e) => {
+        alert("Não foi possível tocar o som: " + e.message);
+      });
+    }
+  </script>
+
+</body>
+</html>
